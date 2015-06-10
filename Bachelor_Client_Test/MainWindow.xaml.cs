@@ -24,5 +24,12 @@ namespace Bachelor_Client_Test
         {
             InitializeComponent();
         }
+
+        private void cmdSend_Click(object sender, RoutedEventArgs e)
+        {
+            Client user = new Client();
+            string content = txtInput.Text;
+            txtOutput.Text = user.Send(content);
+        }
     }
 }
